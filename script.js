@@ -25,4 +25,11 @@ const quotesArray = [
   "It isn’t what you have or who you are or where you are or what you are doing that makes you happy or unhappy. It is what you think about it. --Dale Carnegie",
 ];
 
-console.log(quotesArray[3]);
+function generateQuote() {
+  const randomNumber = Math.trunc(Math.random() * quotesArray.length);
+  console.log(randomNumber);
+  console.log(quotesArray[randomNumber]);
+  document.getElementById("display").innerHTML = quotesArray[randomNumber];
+}
+
+generateQuote();
