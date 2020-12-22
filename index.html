@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Title bar icon -->
     <link rel="icon" href="./tree.png" type="image/icon type" />
+    <!-- Link stylesheet -->
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Link google font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap"
       rel="stylesheet"
@@ -17,10 +19,16 @@
     <link rel="stylesheet" href="" />
   </head>
   <body>
-    <h1>Random Quote Generator</h1>
-    <h2 id="display"></h2>
-    <div class="quote-button">
-      <button onclick="generateQuote()">New Quote</button>
+    <div class="quote">
+      <h2 id="display"></h2>
+    </div>
+    <div class="container">
+      <div class="center">
+        <!-- Button to generate new quote -->
+        <button class="quote-button" onclick="generateQuote()">
+          Generate Quote
+        </button>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
