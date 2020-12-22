@@ -1,21 +1,59 @@
 body {
+  /* Background image */
   background-image: url("./unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
+  /* Change font type */
   font-family: "Source Sans Pro", sans-serif;
 }
 
-h1 {
-  font-size: 90px;
-  text-align: center;
+.quote {
+  /* Centre quote */
+  margin: auto;
+  width: 60%;
 }
 
 h2 {
-  font-size: 55px;
+  /* Typography */
+  color: white;
+  font-size: 3em;
   text-align: center;
 }
 
+/* Quote button styling */
 .quote-button {
+  display: inline-block;
+  padding: 1em 3em;
+  border: 0.11em solid #transparent;
+  margin: 0 1em 1em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
   text-align: center;
+  transition: all 0.15s;
+}
+
+/* Quote button hover effect */
+.quote-button:hover {
+  color: #657773;
+}
+
+/* Center quote button */
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid transparent;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
