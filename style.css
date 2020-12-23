@@ -5,18 +5,18 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
-  /* Change font type */
+  /* Set font type */
   font-family: "Source Sans Pro", sans-serif;
 }
 
 .quote {
-  /* Centre quote */
+  /* Centre quote display */
   margin: auto;
   width: 60%;
 }
 
 h2 {
-  /* Typography */
+  /* Generated quote styling */
   color: white;
   font-size: 3em;
   text-align: center;
@@ -39,16 +39,17 @@ h2 {
 
 /* Quote button hover effect */
 .quote-button:hover {
-  color: #657773;
+  color: white;
 }
 
-/* Center quote button */
+/* Quote button container styling */
 .container {
   height: 200px;
   position: relative;
   border: 3px solid transparent;
 }
 
+/* Centre quote button */
 .center {
   margin: 0;
   position: absolute;
