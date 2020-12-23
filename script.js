@@ -1,5 +1,6 @@
 "use strict";
 
+// Data structure to hold the quotes
 const quotesArray = [
   "This is the real secret of life – to be completely engaged with what you are doing in the here and now. And instead of calling it work, realize it is play. -Alan Watts",
   "This is the real secret of life – to be completely engaged with what you are doing in the here and now. And instead of calling it work, realize it is play. -Alan Watts",
@@ -23,11 +24,23 @@ const quotesArray = [
   "Our fatigue is often caused not by work, but by worry, frustration and resentment. -Dale Carnegie",
   "Today is our most precious possession. It is our only sure possession. -Dale Carnegie",
   "It isn’t what you have or who you are or where you are or what you are doing that makes you happy or unhappy. It is what you think about it. -Dale Carnegie",
+  "It does not matter how slowly you go as long as you do not stop. -Confucius",
+  "The man who moves a mountain begins by carrying away small stones. -Confucius",
+  "Wherever you go, go with all your heart. -Confucius",
+  "Life is really simple, but we insist on making it complicated. -Confucius",
+  "Sometimes you have to travel a long way to find what is near. -Paulo Coelho",
+  "There is only one thing that makes a dream impossible to achieve: the fear of failure. -Paulo Coelho",
+  "To live is the rarest thing in the world. Most people exist, that is all. -Oscar Wilde",
+  "Always do what you are afraid to do. -Ralph Waldo Emerson",
+  "Our greatest glory is not in never failing, but in rising up every time we fail. -Ralph Waldo Emerson",
+  "Adopt the pace of nature: her secret is patience. -Ralph Waldo Emerson",
+  "Do not let the behavior of others destroy your inner peace. -Dalai Lama XIV",
 ];
 
+// Function invoked when quote button is clicked
 function generateQuote() {
+  // Generate a number between 0 and the length of array
   const randomNumber = Math.trunc(Math.random() * quotesArray.length);
-  console.log(randomNumber);
-  console.log(quotesArray[randomNumber]);
+  // Display a quote stored in the array
   document.getElementById("display").innerHTML = quotesArray[randomNumber];
 }
