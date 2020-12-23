@@ -1,2 +1,3 @@
-﻿# random-quote-generator-js
+# random-quote-generator-js ✅
+
 https://quote-generator-111.netlify.app/
